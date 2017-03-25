@@ -1,0 +1,27 @@
+{
+  "name": "validate-graphql-page-args",
+  "version": "1.0.0",
+  "description": "Validate graphql pagintion arguments",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qard/validate-graphql-page-args.git"
+  },
+  "keywords": [
+    "graphql",
+    "pagination",
+    "validation"
+  ],
+  "author": "Stephen Belanger <admin@stephenbelanger.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Qard/validate-graphql-page-args/issues"
+  },
+  "homepage": "https://github.com/Qard/validate-graphql-page-args#readme",
+  "devDependencies": {
+    "tap": "^10.3.0"
+  }
+}
