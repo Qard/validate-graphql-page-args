@@ -9,12 +9,16 @@ function validator(opts) {
   var max = opts.max || 100
 
   return function (args) {
+    if (!args.first && !args.last) {
+      throw new Error('Must specify a `first` or `last` range')
+    }
+
     // Validate conflicting args are not present
     if (args.first && args.last) {
-      throw new Error('Can not use both first and last together')
+      throw new Error('Can not use both `first` and `last` together')
     }
     if (args.before && args.after) {
-      throw new Error('Can not use both before and after together')
+      throw new Error('Can not use both `before` and `after` together')
     }
 
     // Validate requested limits do not exceed allowable range
