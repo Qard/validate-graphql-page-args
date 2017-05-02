@@ -5,8 +5,8 @@ function validCursorType(v) {
 module.exports = validator
 function validator(opts) {
   opts = opts || {}
-  var min = opts.min || 1
-  var max = opts.max || 100
+  var min = (typeof opts.min === 'number') ? opts.min : 1
+  var max = (typeof opts.max === 'number') ? opts.max : 100
 
   return function (args) {
     if (!args.first && !args.last) {
