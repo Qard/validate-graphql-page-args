@@ -1,5 +1,7 @@
 # validate-graphql-page-args
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Qard/validate-graphql-page-args.svg)](https://greenkeeper.io/)
+
 This module validates the `first`, `last`, `before` and `after` arguments
 typically used in graphql pagination.
 
